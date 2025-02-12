@@ -3,76 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Css-Assign</title>
     <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      body {
-        background: rgb(255, 211, 143);
-        background: linear-gradient(
-          140deg,
-          rgba(255, 211, 143, 1) 0%,
-          rgba(230, 217, 204, 1) 100%
-        );
-      }
-
-      .nav-item {
-        display: flex;
-        align-items: center;
-        color: black;
-        justify-content: space-between;
-        padding: 5px 20px;
-        margin-top: 8px;
-      }
-
-      @media screen and (max-width: 375px) {
-        .nav-item {
-          padding: 5px 10px;
-        }
-      }
-
-      .logo {
-        width: 45px;
-      }
-
-      ul {
-        display: flex;
-        list-style: none;
-        gap: 30px;
-      }
-
-      @media (1000px >= width) {
-        ul {
-          display: none;
-        }
-        .child {
-          order: -2;
-          gap: 10px;
-        }
-      }
-
-      .btn {
-        color: white;
-        text-decoration: none;
-        border: 1px solid rgba(245, 143, 39, 1) 100%;
-        background: rgb(255, 211, 143);
-        background: linear-gradient(
-          286deg,
-          rgba(255, 211, 143, 1) 0%,
-          rgba(245, 143, 39, 1) 100%
-        );
-        padding: 10px 20px;
-        border-radius: 30px;
-        align-items: center;
-      }
-
-      .child {
-        display: flex;
-        align-items: center;
-      }
-
       /* para-content srt */
 
       .para-container {
@@ -84,28 +18,38 @@
       @media (max-width: 500px) {
         .para-container {
           flex-wrap: wrap;
-          width: 400px;
+        
         }
       }
 
       .content {
         margin-top: 50px;
-        width: 30%;
+       width: 30%;
+      }
+
+      @media (max-width: 1000px) {
+        .content {
+          margin-left: 50px;
+
+        }
       }
 
       @media (max-width: 500px) {
         .content {
           flex-wrap: wrap;
-          width: 300px;
+          width: 800px;
           margin-bottom: 50px;
+          margin-left: 50px;
+
         }
       }
 
       @media (max-width: 400px) {
         .content {
           flex-wrap: wrap;
-          width: 200px;
+          width: 250px;
           margin-bottom: 50px;
+          margin-left: 10px;
         }
       }
 
@@ -118,8 +62,11 @@
   </head>
   <body>
     <div class="container">
+      <img class="logo" src="pic1.png" alt="" />
+      <section>
+        <i class="fa-solid fa-bars" class="icon"></i>
+      </section>
       <nav class="nav-item">
-        <img class="logo" src="pic1.png" alt="" />
         <ul>
           <li class="list-link">About</li>
           <li class="list-link">Features</li>
@@ -128,12 +75,13 @@
           <li class="list-link">Team</li>
         </ul>
 
-        <a href="" class="btn">Contact</a>
-        <ul class="child">
-          <i class="fa-brands fa-facebook-f icon"></i>
-          <i class="fa-brands fa-twitter icon"></i>
-          <i class="fa-brands fa-instagram icon"></i>
+        <a href="https://mail/to/owaisrazaraza780@gmail.com" class="btn1">Contact</a>
+        <ul>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <a href="https://www.instagram.com/owais_raza72"><i class="fa-brands fa-instagram"></i></a>
         </ul>
+
       </nav>
     </div>
 
@@ -147,7 +95,7 @@
           home for them.Let's save the robots!
         </p>
 
-        <a href="" class="btn">Get Started</a>
+        <a href="" class="btn2">Get Started</a>
       </div>
 
       <img src="pic.png" alt="" />
