@@ -6,62 +6,10 @@
 
     <link rel="stylesheet" href="styles.css" />
     <title>Css-Assign</title>
-    <style>
-      /* para-content srt */
 
-      .para-container {
-        display: flex;
-        margin-top: 50px;
-        justify-content: space-around;
-      }
-
-      @media (max-width: 500px) {
-        .para-container {
-          flex-wrap: wrap;
-        
-        }
-      }
-
-      .content {
-        margin-top: 50px;
-       width: 30%;
-      }
-
-      @media (max-width: 1000px) {
-        .content {
-          margin-left: 50px;
-
-        }
-      }
-
-      @media (max-width: 500px) {
-        .content {
-          flex-wrap: wrap;
-          width: 800px;
-          margin-bottom: 50px;
-          margin-left: 50px;
-
-        }
-      }
-
-      @media (max-width: 400px) {
-        .content {
-          flex-wrap: wrap;
-          width: 250px;
-          margin-bottom: 50px;
-          margin-left: 10px;
-        }
-      }
-
-      .paragraph {
-        margin-top: 40px;
-        margin-bottom: 50px;
-        word-spacing: 5px;
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container main-contain">
       <img class="logo" src="pic1.png" alt="" />
       <section>
         <i class="fa-solid fa-bars" class="icon"></i>
@@ -85,7 +33,7 @@
       </nav>
     </div>
 
-    <div class="para-container">
+    <div class="para-container main-contain">
       <div class="content">
         <h1>GIVE ROBOTS</h1>
         <h1>A SECOND CHANCE</h1>
@@ -98,7 +46,7 @@
         <a href="" class="btn2">Get Started</a>
       </div>
 
-      <img src="pic.png" alt="" />
+      <img class="picture" src="pic.png" alt="" />
     </div>
 
     <script
